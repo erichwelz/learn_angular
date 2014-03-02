@@ -1,0 +1,22 @@
+OVERVIEW
+
+Directives, Filters and (two-way) Data Binding
+Views, Controllers and Scope
+Modules, Routes and Factories
+
+Getting Started
+
+Single Page Application (SPA)
+
+Loads initial content up-front/views loaded on the fly
+
+FEATURES
+
+Data Binding MVC Routing Testing jqLite Templates History Factories
+
+ViewModel Controllers Views Directives Services Dependency Injection Validation
+
+Directives
+
+Allows us to extend html
+ng- indicates a directive eg. ng-app /ng-model
