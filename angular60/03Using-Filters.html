@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+  <html data-ng-app="">
+  <head>
+    <title></title>
+  </head>
+
+  <body>
+    <div class="container"
+        data-ng-init="family=[
+        {name: 'Leif',city:'Edmonton'},
+        {name: 'Erich',city:'Toronto'},
+        {name:'Joan',city:'Edmonton'},
+        {name:'Uwe', city:'Hamburg'}]">
+        
+        <h3>Using Filters</h3>
+        <ul>
+          <li data-ng-repeat="fam in family">{{ fam.name }} - {{ fam.city }}</li>
+        </ul>
+      </div>
+
+      <script src="../angular.min.js"></script>
+    </body>
+  </html>

@@ -20,3 +20,6 @@ Directives
 
 Allows us to extend html
 ng- indicates a directive eg. ng-app /ng-model
+
+Great resource: docs.angularjs.com > Develop > API Reference
+
