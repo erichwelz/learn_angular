@@ -23,3 +23,10 @@ ng- indicates a directive eg. ng-app /ng-model
 
 Great resource: docs.angularjs.com > Develop > API Reference
 
+Views, Controllers and Scope
+
+Logic places in special js object controller to improve/ensure testability
+
+$scope - Glue between view and controller
+
+controller should know nothing about the view

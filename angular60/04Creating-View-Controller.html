@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+  <html data-ng-app="">
+  <head>
+    <title></title>
+  </head>
+
+  <body>
+        <h3>Using Filters</h3>
+
+    <div class="container" data-ng-controller="SimpleController">
+        
+        Name:
+        <br />
+        <input type="text" data-ng-model="name" />
+        <br />
+
+        <ul>
+          <li data-ng-repeat="fam in family | filter:name | orderBy:'city'">{{ fam.name | uppercase }} - {{ fam.city | lowercase }}</li>
+        </ul>
+      </div>
+  
+  <script> //Script inline for demo purposes
+    function SimpleController($scope) {
+
+      $scope.family = [
+        { name: 'Leif', city: 'Edmonton' },
+        { name: 'Erich',city: 'Toronto' },
+        { name: 'Joan', city: 'Edmonton' },
+        { name: 'Uwe', city: 'Hamburg' }
+        ];
+      }
+   </script>   
+
+      <script src="../angular.min.js"></script>
+    </body>
+  </html>
