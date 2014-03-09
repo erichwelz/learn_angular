@@ -44,7 +44,11 @@ var demoApp = angular.module('demoApp', ['helperModule']);
   <script> //Script inline for demo purposes
     var demoApp = angular.module('demoApp', []);
 
-    function SimpleController($scope) {
+
+
+    var controllers = {};
+
+    controllers.SimpleController = function($scope) {
 
       $scope.family = [
         { name: 'Leif', city: 'Edmonton' },
@@ -52,8 +56,10 @@ var demoApp = angular.module('demoApp', ['helperModule']);
         { name: 'Joan', city: 'Edmonton' },
         { name: 'Uwe', city: 'Hamburg' }
         ];
-      }
-      demoApp.controller('SimpleController', SimpleController);
+      };
+
+
+      demoApp.controller(controllers);
    </script>   
 
 
